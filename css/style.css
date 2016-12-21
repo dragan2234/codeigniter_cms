@@ -1,0 +1,38 @@
+ul.nav li.dropdown:hover ul.dropdown-menu { display: block; }
+h1 a {
+	display: inline-block;
+	background: green;
+	border-radius: 10px;
+	height: 70px;
+	padding: 20px 20px 20px 20px;
+	color: black;
+
+
+}
+
+h1 a:hover {
+	text-decoration: none;
+	color: black;
+	background: yellow;
+
+}
+
+h1, h2, h3 {
+	font-family: georgia, serif;
+
+}
+#pagination a {
+	background:#e3e3e3;
+	padding: 4px 7px;
+	border: 1px solid #cac9c9;
+	color:#292929;
+	font-size: 20px;
+}
+
+#pagination strong, #pagination a:hover {
+	font-weight: normal;
+	background: #cac9c9;
+	font-size: 20px;
+	padding: 4px 7px;
+	border: 1px solid #cac9c9;
+}
