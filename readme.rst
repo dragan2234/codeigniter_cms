@@ -3,6 +3,7 @@ Database file is "BAZA".
 
 Database configuration is in application/config/database.php and you should also set your base_url in application/config/config.php
 
+go to /admin to login to admin panel with email: admin@admin.com  password:admin
 
 
 
