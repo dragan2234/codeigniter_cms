@@ -1,0 +1,178 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.2
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Dec 21, 2016 at 07:32 
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 7.0.9
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `cms`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `articles`
+--
+
+CREATE TABLE `articles` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `slug` varchar(128) NOT NULL,
+  `pubdate` date NOT NULL,
+  `body` text NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `articles`
+--
+
+INSERT INTO `articles` (`id`, `title`, `slug`, `pubdate`, `body`, `created`, `modified`) VALUES
+(1, 'NBA otvara akademiju u Africi', 'NBA-otvara-akademiju-u-Africi', '2016-10-29', 'Američka košarkaška NBA liga otvorice sledeće godine akademiju u Africi, što je njen najnoviji pokušaj da pronađe talentovane igrače van SAD i proširi domet lige na nove teritorije.\r\n\r\nSedište akademije biće u Tiesu u Senegalu, a očekuje da će početi da radi u maju. Kako se navodi, NBA će ove nedelje početi skauting za prvu klasu afričke akademije od 12 mladih igrača.\r\n\r\nNBA liga je slične projekte ove godine započela u Kini, gde ima tri akademije, i u Australiji. Akademija u Indiji će početi da radi u aprilu.\r\n\r\n"Međunarodne akademije, elitni trening centri za dečake i devojčice uzrasta do 16 i 18 godina su najveća investicija koju je NBA liga ikada napravila za razvoj košarke na globalnom nivou", rekao je potpredsednik NBA lige za međunarodne košarkaške operacije Bruks Mik.\r\n\r\n"Idemo punom snagom i zaista smo uzbuđeni napretkom koji smo napravili", dodao je on.\r\n\r\nNa ovogodišnjem draftu u NBA ligi izabrano je 26 stranih igrača, što je rekord.', '2016-10-29 21:36:24', '2016-12-21 16:40:12'),
+(2, 'Pregled NBA veceri', 'Pregled-NBA-veceri', '2016-12-10', 'Kошаркаши Лос Aнђелес Kлиперса наставили су са одличним издањима у НБA лиги, пошто су рано jутрос савладали Денвер 119:112, за коjи jе Никола Jокић убацио девет поена.\r\n\r\nEnlarge\r\n\r\nKлиперси су искористили умор Денвера jер jе противник одиграо трећу утакмицу у четири дана и уписали 21. триjумф ове сезоне, уз осам пораза, док Нагетси имаjу скор 12-17.\r\n\r\nJокић jе на терену провео 21 минут, вероватно би и више играо да ниjе имао проблема са личним грешкама, а остварио jе jош шест скокова и асистенциjу, уз солидан шут из игре (4/5 за два, 0/2 за три).\r\n\r\nУ пораженом саставу Вил Бартон убацио jе 22 коша, Данило Галинари 17, док су се код домаћина истакли Џеj Џеj Редик са 27 (7/9 за три) и Kрис Пол са 16, уз 15 асистенциjа.', '2016-12-14 16:24:17', '2016-12-21 16:45:52'),
+(3, 'Problem Teodosica u NBA', 'Problem-Teodosica-u-NBA', '2016-12-11', '-Teodosić je danas drugačiji igrač nego što je bio pre tri ili šest godina. Zreliji je, konačno je osvojio trofej Evrolige i mnogo je napredovao. Briga je njegova odbrana, ali je pametan da izbegne nevolju - kazao je Mesina.\r\n\r\nItalijan je dodao i da kada je u pitanju novac u početku Teodosić ne može da se nada mnogo većim primanjima u odnosu na ono koliko zarađuje u Moskvi.\r\n\r\n- Mislim da lako može da igra na nivou NBA lige, ali sve je na njemu. Objektivno, na početku NBA karijere neće zaraditi mnogo više novca nego u Evropi, ali gledajući talenat, ne postoji sumnja da može da igra na najviše mogućem nivou.', '2016-12-14 18:59:25', '2016-12-21 16:45:59'),
+(4, 'Harden i Derozan igraci nedelje', 'Harden-i-Derozan-igraci-nedelje', '2016-12-12', 'Najbolji na istoku ovoga puta bio je sjajni košarkaš Toronto Reptorsa Demar Derozan.\r\n\r\nOn je predvodio Reptorse do tri pobede iz četiri odigrana duela, za to vreme je imao najbolji košegterski učinak u ligi 31,5 poena po utakmici.\r\n\r\nŠutirao je na ta četiri meča preko 60% iz igre, imao je i 4,5 skoka i 3,5 asistencije po utakmici.\r\n\r\nOvo je drugi put ove sezone, da Derozan vezuje četiri utakmice sa 30 ili više poena.\r\n\r\nŠto se tiče Zapada, nije bilo nikakve dileme, najbolji je Džejms Harden.\r\n\r\n&quot;Brada&quot; je glavni pokretač neverovatne serije Roketsa koja još uvek traje. Vezali su košarkaši franšize iz Hjustona čak 10 pobeda, četiri su došle prethodne nedelje.\r\n\r\nU minulih sedam dana Harden je upisivao 27 poena po utakmici, uz neverovatnih 12,8 asistencija (najbolji u ligi) i 9,8 skokova po meč, što je jako malo od tripl-dabla po utakmici!\r\n\r\nUpisao je dva tripl-dabla i to vezana prethodne nedelje, ukupno ih ima šest ove sezone, a 15 u karijeri. Sa tim učinkom prestigao je legendu Roketsa Hakima Olajdžuvona po broju tripl-dablova u dresu te franšize.', '2016-12-14 19:00:09', '2016-12-21 16:46:04'),
+(5, 'Kazins kaznjen zbog vredjanja novinara', 'Kazins-kaznjen-zbog-vredjanja-novinara', '2016-12-14', 'Centar Sakramento Kingsa je dobio po džepu zbog nepristojnog komentara na jednu kolumnu u kojoj je autor kritikovao njegova ponašanje.\r\n\r\nKingsi nisu otrkili koliki je tačan iznos Kazinsove kazne, a ESPN prenosi da se radi o ozbiljnoj cifri. Procenjeno je da je to svrsishodnije nego da je dobio koji meč suspenzije.\r\n\r\nBugiju nije bilo svejedno što je rasvetljeno njegovo šenlučenje po jednom njuroškom noćnom klubu, kao ni to što je pomenuto hapšenej njegovog mlađeg brata Džalila, pa je žešće opleo po novinaru, nazivajući ga pogrdnim imenima.', '2016-12-14 19:07:01', '2016-12-21 16:45:37'),
+(8, 'Lebron pretekao i Mozesa Melona', 'Lebron-pretekao-i-Mozesa-Melona', '2015-12-20', 'Pogotkom posle nešto manje od tri minuta igre u duelu Klivlend Kavalirsa i Milvoki Baksa, "Kralj" je stigao do 27.410 poena u profesionalnoj karijeri, prestigavši pokojnog Mozesa Melouna.\r\n\r\n"On je dominirao u svojoj eri. Mogao je da pogađa, da skače, da dodaje... Bio je veoma dominantan. Bio je prva osoba koju sam imao prilike da upoznam u svojoj ruki godini. Došao je u moju sobu u hotelu u Sakramentu, zajedno smo večerali i pričali o tome kako je biti ruki. Ispričao mi je i naučio me mnogo tome, pa sam i zbog toga još više bio tužan. Takođe, znate da sam ga oslovljavao sa ujka Mo svaki put kada bih ga video, prosto jer je uvek bio tu za mene", rekao je Lebron.\r\n\r\nNaredni igrač čiji će učinak momak iz Ohaja nadmašiti biće Šekil O''Nil sa 28.596 poena, a od aktivnih igrača ispred njega je samo još Dirk Novicki sa 29,552 poena, na šestoj poziciji.\r\n\r\nNa čelu je neprikosnoveni Karim Adbul-Džabar sa 38.387 poena.', '2016-12-20 02:02:50', '2016-12-21 16:38:45');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ci_sessions`
+--
+
+CREATE TABLE `ci_sessions` (
+  `session_id` varchar(40) NOT NULL DEFAULT '0',
+  `ip_address` varchar(45) NOT NULL DEFAULT '0',
+  `user_agent` varchar(120) NOT NULL,
+  `last_activity` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `user_data` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `migrations`
+--
+
+CREATE TABLE `migrations` (
+  `version` bigint(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `migrations`
+--
+
+INSERT INTO `migrations` (`version`) VALUES
+(6);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pages`
+--
+
+CREATE TABLE `pages` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `slug` varchar(128) NOT NULL,
+  `order` int(11) NOT NULL,
+  `body` text NOT NULL,
+  `parent_id` int(11) UNSIGNED DEFAULT '0',
+  `template` varchar(25) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `pages`
+--
+
+INSERT INTO `pages` (`id`, `title`, `slug`, `order`, `body`, `parent_id`, `template`) VALUES
+(1, 'Homepage', '', 1, 'lorem kurac palaacsaodulorem kurac palaacsaodulorem kurac palaacsaodulorem kurac palaacsaodulorem kurac palaacsaodulorem kurac palaacsaoduv', 0, 'homepage'),
+(3, 'contact', 'contact', 4, 'this is contact', 4, 'page'),
+(4, 'About', 'about', 3, 'this is about page', 0, 'page'),
+(5, 'News archive', 'archive', 2, 'THIS IS NEWS ARCHIVE PAGE', 0, 'news_archive');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(128) NOT NULL,
+  `name` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`, `name`) VALUES
+(1, 'draganpilipovic1997bp@gmail.com', 'f044a2cf4d98ba3f19889d0086b611c45ab08fdf9c4e85aefa027257a7121ab4062db7afce21e4b6c6491e8a3951c8cdda9dba0b39850d1df635170614caa342', 'Dragance'),
+(3, 'admin@admin.com', 'e7ccb4932c4d1f9f19c657804551d9c6975b6759ec92d397522d4e666082de1cf2f5feb6abad7a799e0d4436622e55a23c4de64fbda7fc04847f4ac147c30be9', 'admin');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `articles`
+--
+ALTER TABLE `articles`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ci_sessions`
+--
+ALTER TABLE `ci_sessions`
+  ADD KEY `last_activity_idx` (`last_activity`);
+
+--
+-- Indexes for table `pages`
+--
+ALTER TABLE `pages`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `articles`
+--
+ALTER TABLE `articles`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT for table `pages`
+--
+ALTER TABLE `pages`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
